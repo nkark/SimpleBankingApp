@@ -43,11 +43,12 @@ static BankAccountModel *sharedModel;
 
 -(void)withdrawMoney: (double)withdrawAmount
 {
-    //SUBTRACT AMOUNT FROM BALANCE
-    self.balance = self.balance - withdrawAmount;
-    
-    //IF BALANCE IS EMPTY
-    if(self.balance < 0)
+    if(self.balance > withdrawAmount)
+    {
+        //SUBTRACT AMOUNT FROM BALANCE
+        self.balance = self.balance - withdrawAmount;
+    }
+    else
     {
         NSLog(@"Insufficient funds.");
         
@@ -55,7 +56,8 @@ static BankAccountModel *sharedModel;
                                         initWithTitle:@"Error" message:@"Insufficient Funds!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [withdrawAlert show];
     }
-    
+   
+
     //GENERATE TRANSACTION STRING
     NSString *transaction = [NSString stringWithFormat:@"Withdrawal made of $%.2f", withdrawAmount];
     
