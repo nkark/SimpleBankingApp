@@ -37,8 +37,37 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    //PRINT TRANSACTION ARRAY
-    self.transHistoryTextView.text = [[[BankAccountModel sharedModel] transactionArray] componentsJoinedByString:@"\n"];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.transactionTableView reloadData];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    long count = [[[BankAccountModel sharedModel] transactionArray] count];
+    NSLog(@"%ld",count);
+    return [[[BankAccountModel sharedModel] transactionArray] count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    if(!cell)
+    {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    cell.textLabel.text = [[[BankAccountModel sharedModel] transactionArray] objectAtIndex:indexPath.row];
+    return cell;
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940937ED18A87D0E002A5F99 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940937EC18A87D0E002A5F99 /* LoginViewController.m */; };
 		94EDB4CA18959F9600D5F1FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EDB4C918959F9600D5F1FE /* Foundation.framework */; };
 		94EDB4CC18959F9600D5F1FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EDB4CB18959F9600D5F1FE /* CoreGraphics.framework */; };
 		94EDB4CE18959F9600D5F1FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EDB4CD18959F9600D5F1FE /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		940937EB18A87D0E002A5F99 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		940937EC18A87D0E002A5F99 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		94EDB4C618959F9600D5F1FE /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDB4C918959F9600D5F1FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94EDB4CB18959F9600D5F1FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 				94EDB5021895A73F00D5F1FE /* BankAccountModel.m */,
 				94EDB4FE1895A15700D5F1FE /* TransactionViewController.h */,
 				94EDB4FF1895A15700D5F1FE /* TransactionViewController.m */,
+				940937EB18A87D0E002A5F99 /* LoginViewController.h */,
+				940937EC18A87D0E002A5F99 /* LoginViewController.m */,
 				94EDB4E118959F9600D5F1FE /* Images.xcassets */,
 				94EDB4D018959F9600D5F1FE /* Supporting Files */,
 			);
@@ -262,6 +267,7 @@
 			files = (
 				94EDB4D618959F9600D5F1FE /* main.m in Sources */,
 				94EDB4E018959F9600D5F1FE /* MainViewController.m in Sources */,
+				940937ED18A87D0E002A5F99 /* LoginViewController.m in Sources */,
 				94EDB5031895A73F00D5F1FE /* BankAccountModel.m in Sources */,
 				94EDB4DA18959F9600D5F1FE /* MainAppDelegate.m in Sources */,
 				94EDB5001895A15700D5F1FE /* TransactionViewController.m in Sources */,
@@ -473,6 +479,7 @@
 				94EDB4FA18959F9600D5F1FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94EDB4FB18959F9600D5F1FE /* Build configuration list for PBXNativeTarget "Assignment1Tests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				94EDB4FD18959F9600D5F1FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

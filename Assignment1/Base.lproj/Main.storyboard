@@ -76,12 +76,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="-267"/>
+            <point key="canvasLocation" x="113" y="-313"/>
         </scene>
-        <!--Transaction View Controller - Transactions-->
+        <!--Transaction View Controller - Transaction History-->
         <scene sceneID="Ynn-bo-7MO">
             <objects>
-                <viewController id="VhA-yH-eZG" customClass="TransactionViewController" sceneMemberID="viewController">
+                <viewController title="Transaction History" id="VhA-yH-eZG" customClass="TransactionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1LF-WX-6kW"/>
                         <viewControllerLayoutGuide type="bottom" id="LRf-Tp-ZV5"/>
@@ -90,14 +90,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-xR-Ea2">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-6C-s3h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="0.80397932159999996" blue="0.54543947329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      Transaction History Displayed Here      </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Joj-Jg-bPt">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Joj-Jg-bPt" id="ME2-qV-wD0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VhA-yH-eZG" id="9nh-3T-oHi"/>
+                                    <outlet property="delegate" destination="VhA-yH-eZG" id="Xp2-Xs-zKA"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80397932159999996" blue="0.54543947329999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -105,12 +116,12 @@
                     <navigationItem key="navigationItem" id="dsy-9e-FTl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="transHistoryTextView" destination="qZr-xR-Ea2" id="PPa-VU-ye8"/>
+                        <outlet property="transactionTableView" destination="eUb-6C-s3h" id="PmU-tF-BhD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ng0-TT-DJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="460"/>
+            <point key="canvasLocation" x="113" y="426"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aTn-yV-MN1">
@@ -129,7 +140,51 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHz-PB-A6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="-21"/>
+            <point key="canvasLocation" x="-518" y="-67"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="NDC-fu-RKA">
+            <objects>
+                <viewController id="n9Y-XZ-aZ4" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xoD-JG-EJM"/>
+                        <viewControllerLayoutGuide type="bottom" id="UOR-78-R6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vv2-dA-Ria">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe left to login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhA-rE-9qg">
+                                <rect key="frame" x="67" y="316" width="186" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acv-8B-EsC">
+                                <rect key="frame" x="146" y="262" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mar-HQ-Nuq">
+                                <rect key="frame" x="51" y="266" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.79621042750000004" blue="0.60874924789999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="loginLabel" destination="FhA-rE-9qg" id="qsB-Md-jhf"/>
+                        <outlet property="passwordTextField" destination="acv-8B-EsC" id="POR-na-aQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehQ-vU-aN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1041" y="-67"/>
         </scene>
     </scenes>
     <resources>

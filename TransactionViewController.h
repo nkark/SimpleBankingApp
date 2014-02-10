@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
 
-@interface TransactionViewController : UIViewController
+@interface TransactionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UITextView *transHistoryTextView;
+@property (strong, nonatomic) IBOutlet UITableView *transactionTableView;
 
 @end

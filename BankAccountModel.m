@@ -66,6 +66,7 @@ static BankAccountModel *sharedModel;
     
     //ADD TRANSACTION TO HISTORY
     [self.transactionArray addObject:transaction];
+    
 }
 
 @end
