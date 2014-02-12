@@ -47,12 +47,12 @@
 		94EDB4D318959F9600D5F1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94EDB4D518959F9600D5F1FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94EDB4D718959F9600D5F1FE /* SimpleBankingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBankingApp-Prefix.pch"; sourceTree = "<group>"; };
-		94EDB4D818959F9600D5F1FE /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
-		94EDB4D918959F9600D5F1FE /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
+		94EDB4D818959F9600D5F1FE /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainAppDelegate.h; path = ../SimpleBankingApp/MainAppDelegate.h; sourceTree = "<group>"; };
+		94EDB4D918959F9600D5F1FE /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainAppDelegate.m; path = ../SimpleBankingApp/MainAppDelegate.m; sourceTree = "<group>"; };
 		94EDB4DC18959F9600D5F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		94EDB4DE18959F9600D5F1FE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		94EDB4DF18959F9600D5F1FE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		94EDB4E118959F9600D5F1FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94EDB4DE18959F9600D5F1FE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../SimpleBankingApp/MainViewController.h; sourceTree = "<group>"; };
+		94EDB4DF18959F9600D5F1FE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../SimpleBankingApp/MainViewController.m; sourceTree = "<group>"; };
+		94EDB4E118959F9600D5F1FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../SimpleBankingApp/Images.xcassets; sourceTree = "<group>"; };
 		94EDB4E718959F9600D5F1FE /* SimpleBankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDB4E818959F9600D5F1FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94EDB4F018959F9600D5F1FE /* SimpleBankingAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBankingAppTests-Info.plist"; sourceTree = "<group>"; };
@@ -309,6 +309,7 @@
 				94EDB4DC18959F9600D5F1FE /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../SimpleBankingApp;
 			sourceTree = "<group>";
 		};
 		94EDB4F118959F9600D5F1FE /* InfoPlist.strings */ = {
