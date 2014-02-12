@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BankAccountModel : NSObject
+@interface BankAccountModel : NSObject <NSCoding>
 
 @property (nonatomic) double balance;
 @property (strong, nonatomic) NSMutableArray *transactionArray;
+@property (strong, nonatomic) NSMutableArray *dateArray;
 
 -(void)depositMoney:(double)depositAmount;
 -(void)withdrawMoney:(double)withdrawAmount;

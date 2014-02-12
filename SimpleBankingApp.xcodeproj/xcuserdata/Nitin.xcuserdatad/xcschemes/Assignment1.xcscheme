@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "94EDB4C518959F9600D5F1FE"
                BuildableName = "Assignment1.app"
-               BlueprintName = "Assignment1"
-               ReferencedContainer = "container:Assignment1.xcodeproj">
+               BlueprintName = "SimpleBankingApp"
+               ReferencedContainer = "container:SimpleBankingApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "94EDB4E618959F9600D5F1FE"
                BuildableName = "Assignment1Tests.xctest"
-               BlueprintName = "Assignment1Tests"
-               ReferencedContainer = "container:Assignment1.xcodeproj">
+               BlueprintName = "SimpleBankingAppTests"
+               ReferencedContainer = "container:SimpleBankingApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "94EDB4C518959F9600D5F1FE"
             BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BlueprintName = "SimpleBankingApp"
+            ReferencedContainer = "container:SimpleBankingApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "94EDB4C518959F9600D5F1FE"
             BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BlueprintName = "SimpleBankingApp"
+            ReferencedContainer = "container:SimpleBankingApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "94EDB4C518959F9600D5F1FE"
             BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BlueprintName = "SimpleBankingApp"
+            ReferencedContainer = "container:SimpleBankingApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

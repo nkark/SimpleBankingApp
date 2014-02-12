@@ -15,7 +15,27 @@ static BankAccountModel *sharedModel;
 -(id)init
 {
     self.transactionArray = [[NSMutableArray alloc] init];
+    self.dateArray = [[NSMutableArray alloc] init];
     return self;
+}
+
+//given a decoder pull the information out of it
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super init])) {
+        self.balance = [aDecoder decodeDoubleForKey:@"Balance"];
+        self.transactionArray = [aDecoder decodeObjectForKey:@"Transaction Array"];
+        self.dateArray = [aDecoder decodeObjectForKey:@"Date Array"];
+    }
+    return self;
+}
+
+// if we're given an encoder let's save the information that we have
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeDouble:self.balance forKey:@"Balance"];
+    [aCoder encodeObject:self.transactionArray forKey:@"Transaction Array"];
+    [aCoder encodeObject:self.dateArray forKey:@"Date Array"];
 }
 
 +(id)sharedModel
@@ -39,6 +59,18 @@ static BankAccountModel *sharedModel;
     
     //ADD TRANSACTION TO HISTORY
     [self.transactionArray addObject:transaction];
+    
+    //GENERATE DATE AND TIME OF DEPOSIT
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    NSString *date = [dateFormatter stringFromDate:today];
+    
+    //ADD DATE TO DATE ARRAY
+    [self.dateArray addObject:date];
 }
 
 -(void)withdrawMoney: (double)withdrawAmount
@@ -66,6 +98,18 @@ static BankAccountModel *sharedModel;
     
     //ADD TRANSACTION TO HISTORY
     [self.transactionArray addObject:transaction];
+    
+    //GENERATE DATE AND TIME OF WITHDRAWAL
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    NSString *date = [dateFormatter stringFromDate:today];
+    
+    //ADD DATE TO DATE ARRAY
+    [self.dateArray addObject:date];
     
 }
 

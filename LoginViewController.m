@@ -51,7 +51,7 @@
 {
     if([self.passwordTextField.text isEqual: @"asu"])
     {
-        self.loginLabel.text = @"password is correct";
+        [self performSegueWithIdentifier:@"SegueToMain" sender:self];
     }
     else
     {

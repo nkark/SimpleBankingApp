@@ -39,23 +39,23 @@
 /* Begin PBXFileReference section */
 		940937EB18A87D0E002A5F99 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
 		940937EC18A87D0E002A5F99 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
-		94EDB4C618959F9600D5F1FE /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EDB4C618959F9600D5F1FE /* SimpleBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDB4C918959F9600D5F1FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94EDB4CB18959F9600D5F1FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		94EDB4CD18959F9600D5F1FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		94EDB4D118959F9600D5F1FE /* Assignment1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment1-Info.plist"; sourceTree = "<group>"; };
+		94EDB4D118959F9600D5F1FE /* SimpleBankingApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBankingApp-Info.plist"; sourceTree = "<group>"; };
 		94EDB4D318959F9600D5F1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94EDB4D518959F9600D5F1FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		94EDB4D718959F9600D5F1FE /* Assignment1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment1-Prefix.pch"; sourceTree = "<group>"; };
+		94EDB4D718959F9600D5F1FE /* SimpleBankingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBankingApp-Prefix.pch"; sourceTree = "<group>"; };
 		94EDB4D818959F9600D5F1FE /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
 		94EDB4D918959F9600D5F1FE /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
 		94EDB4DC18959F9600D5F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94EDB4DE18959F9600D5F1FE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		94EDB4DF18959F9600D5F1FE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		94EDB4E118959F9600D5F1FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		94EDB4E718959F9600D5F1FE /* Assignment1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EDB4E718959F9600D5F1FE /* SimpleBankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDB4E818959F9600D5F1FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		94EDB4F018959F9600D5F1FE /* Assignment1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment1Tests-Info.plist"; sourceTree = "<group>"; };
+		94EDB4F018959F9600D5F1FE /* SimpleBankingAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBankingAppTests-Info.plist"; sourceTree = "<group>"; };
 		94EDB4F218959F9600D5F1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94EDB4F418959F9600D5F1FE /* Assignment1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment1Tests.m; sourceTree = "<group>"; };
 		94EDB4FE1895A15700D5F1FE /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionViewController.h; path = ../TransactionViewController.h; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		94EDB4BD18959F9600D5F1FE = {
 			isa = PBXGroup;
 			children = (
-				94EDB4CF18959F9600D5F1FE /* Assignment1 */,
-				94EDB4EE18959F9600D5F1FE /* Assignment1Tests */,
+				94EDB4CF18959F9600D5F1FE /* SimpleBankingApp */,
+				94EDB4EE18959F9600D5F1FE /* SimpleBankingAppTests */,
 				94EDB4C818959F9600D5F1FE /* Frameworks */,
 				94EDB4C718959F9600D5F1FE /* Products */,
 			);
@@ -101,8 +101,8 @@
 		94EDB4C718959F9600D5F1FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94EDB4C618959F9600D5F1FE /* Assignment1.app */,
-				94EDB4E718959F9600D5F1FE /* Assignment1Tests.xctest */,
+				94EDB4C618959F9600D5F1FE /* SimpleBankingApp.app */,
+				94EDB4E718959F9600D5F1FE /* SimpleBankingAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		94EDB4CF18959F9600D5F1FE /* Assignment1 */ = {
+		94EDB4CF18959F9600D5F1FE /* SimpleBankingApp */ = {
 			isa = PBXGroup;
 			children = (
 				94EDB4D818959F9600D5F1FE /* MainAppDelegate.h */,
@@ -135,33 +135,35 @@
 				94EDB4E118959F9600D5F1FE /* Images.xcassets */,
 				94EDB4D018959F9600D5F1FE /* Supporting Files */,
 			);
+			name = SimpleBankingApp;
 			path = Assignment1;
 			sourceTree = "<group>";
 		};
 		94EDB4D018959F9600D5F1FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94EDB4D118959F9600D5F1FE /* Assignment1-Info.plist */,
+				94EDB4D118959F9600D5F1FE /* SimpleBankingApp-Info.plist */,
 				94EDB4D218959F9600D5F1FE /* InfoPlist.strings */,
 				94EDB4D518959F9600D5F1FE /* main.m */,
-				94EDB4D718959F9600D5F1FE /* Assignment1-Prefix.pch */,
+				94EDB4D718959F9600D5F1FE /* SimpleBankingApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		94EDB4EE18959F9600D5F1FE /* Assignment1Tests */ = {
+		94EDB4EE18959F9600D5F1FE /* SimpleBankingAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				94EDB4F418959F9600D5F1FE /* Assignment1Tests.m */,
 				94EDB4EF18959F9600D5F1FE /* Supporting Files */,
 			);
+			name = SimpleBankingAppTests;
 			path = Assignment1Tests;
 			sourceTree = "<group>";
 		};
 		94EDB4EF18959F9600D5F1FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94EDB4F018959F9600D5F1FE /* Assignment1Tests-Info.plist */,
+				94EDB4F018959F9600D5F1FE /* SimpleBankingAppTests-Info.plist */,
 				94EDB4F118959F9600D5F1FE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -170,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94EDB4C518959F9600D5F1FE /* Assignment1 */ = {
+		94EDB4C518959F9600D5F1FE /* SimpleBankingApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94EDB4F818959F9600D5F1FE /* Build configuration list for PBXNativeTarget "Assignment1" */;
+			buildConfigurationList = 94EDB4F818959F9600D5F1FE /* Build configuration list for PBXNativeTarget "SimpleBankingApp" */;
 			buildPhases = (
 				94EDB4C218959F9600D5F1FE /* Sources */,
 				94EDB4C318959F9600D5F1FE /* Frameworks */,
@@ -182,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = Assignment1;
+			name = SimpleBankingApp;
 			productName = Assignment1;
-			productReference = 94EDB4C618959F9600D5F1FE /* Assignment1.app */;
+			productReference = 94EDB4C618959F9600D5F1FE /* SimpleBankingApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		94EDB4E618959F9600D5F1FE /* Assignment1Tests */ = {
+		94EDB4E618959F9600D5F1FE /* SimpleBankingAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94EDB4FB18959F9600D5F1FE /* Build configuration list for PBXNativeTarget "Assignment1Tests" */;
+			buildConfigurationList = 94EDB4FB18959F9600D5F1FE /* Build configuration list for PBXNativeTarget "SimpleBankingAppTests" */;
 			buildPhases = (
 				94EDB4E318959F9600D5F1FE /* Sources */,
 				94EDB4E418959F9600D5F1FE /* Frameworks */,
@@ -200,9 +202,9 @@
 			dependencies = (
 				94EDB4ED18959F9600D5F1FE /* PBXTargetDependency */,
 			);
-			name = Assignment1Tests;
+			name = SimpleBankingAppTests;
 			productName = Assignment1Tests;
-			productReference = 94EDB4E718959F9600D5F1FE /* Assignment1Tests.xctest */;
+			productReference = 94EDB4E718959F9600D5F1FE /* SimpleBankingAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94EDB4C118959F9600D5F1FE /* Build configuration list for PBXProject "Assignment1" */;
+			buildConfigurationList = 94EDB4C118959F9600D5F1FE /* Build configuration list for PBXProject "SimpleBankingApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94EDB4C518959F9600D5F1FE /* Assignment1 */,
-				94EDB4E618959F9600D5F1FE /* Assignment1Tests */,
+				94EDB4C518959F9600D5F1FE /* SimpleBankingApp */,
+				94EDB4E618959F9600D5F1FE /* SimpleBankingAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,7 +289,7 @@
 /* Begin PBXTargetDependency section */
 		94EDB4ED18959F9600D5F1FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94EDB4C518959F9600D5F1FE /* Assignment1 */;
+			target = 94EDB4C518959F9600D5F1FE /* SimpleBankingApp */;
 			targetProxy = 94EDB4EC18959F9600D5F1FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,9 +400,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment1/Assignment1-Prefix.pch";
-				INFOPLIST_FILE = "Assignment1/Assignment1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Assignment1/SimpleBankingApp-Prefix.pch";
+				INFOPLIST_FILE = "Assignment1/SimpleBankingApp-Info.plist";
+				PRODUCT_NAME = SimpleBankingApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,9 +413,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment1/Assignment1-Prefix.pch";
-				INFOPLIST_FILE = "Assignment1/Assignment1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Assignment1/SimpleBankingApp-Prefix.pch";
+				INFOPLIST_FILE = "Assignment1/SimpleBankingApp-Info.plist";
+				PRODUCT_NAME = SimpleBankingApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -434,8 +436,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Assignment1Tests/Assignment1Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Assignment1Tests/SimpleBankingAppTests-Info.plist";
+				PRODUCT_NAME = SimpleBankingAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -453,8 +455,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment1/Assignment1-Prefix.pch";
-				INFOPLIST_FILE = "Assignment1Tests/Assignment1Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Assignment1Tests/SimpleBankingAppTests-Info.plist";
+				PRODUCT_NAME = SimpleBankingAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -463,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94EDB4C118959F9600D5F1FE /* Build configuration list for PBXProject "Assignment1" */ = {
+		94EDB4C118959F9600D5F1FE /* Build configuration list for PBXProject "SimpleBankingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94EDB4F618959F9600D5F1FE /* Debug */,
@@ -472,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94EDB4F818959F9600D5F1FE /* Build configuration list for PBXNativeTarget "Assignment1" */ = {
+		94EDB4F818959F9600D5F1FE /* Build configuration list for PBXNativeTarget "SimpleBankingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94EDB4F918959F9600D5F1FE /* Debug */,
@@ -481,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94EDB4FB18959F9600D5F1FE /* Build configuration list for PBXNativeTarget "Assignment1Tests" */ = {
+		94EDB4FB18959F9600D5F1FE /* Build configuration list for PBXNativeTarget "SimpleBankingAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94EDB4FC18959F9600D5F1FE /* Debug */,
